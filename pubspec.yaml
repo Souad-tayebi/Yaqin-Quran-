@@ -1,0 +1,57 @@
+name: secure_audio
+description: Secure Audio App with Flutter & Firebase
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.0
+  cloud_firestore: ^5.4.0
+
+  # Biometric authentication
+  local_auth: ^2.3.0
+
+  # Audio playback
+  just_audio: ^0.9.40
+  just_audio_background: ^0.0.1-beta.12
+  audio_service: ^0.18.15
+
+  # Charts
+  fl_chart: ^0.69.0
+
+  # Local storage
+  shared_preferences: ^2.3.2
+
+  # HTTP requests
+  http: ^1.2.2
+
+  # Sound effects
+  audioplayers: ^6.1.0
+
+  # UI
+  cupertino_icons: ^1.0.8
+  intl: ^0.19.0
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sounds/
+    - assets/ayat_yaqin.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/yaqin.png"
